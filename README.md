@@ -36,8 +36,19 @@
 ### Interacting with pod (pod must running status)
 | Command | Description |
 | --- | --- |
-| `kubectl exec -it <pod name> -- ls` | run ls command in pod |
+| `kubectl exec <pod name> -- ls` | Running individual commands in a pod |
+| `kubectl exec -it <pod name> -- sh` | run a shell to connected to your pod |
 | `kubectl exec deploy/<deployment name> -- ls` | run command in first Pod and first container in Deployment (single- or multi-container cases) |
+
+### Understanding Pod status
+| Status | Meaning |
+| --- | --- |
+| `Init:N/M` | The Pod has **M** Init Containers, and **N** have completed so far. |
+| `Init:Error` | An Init Container has failed to execute. |
+| `Init:CrashLoopBackOff` | An Init Container has failed repeatedly. |
+| `Pending` | The Pod has not yet begun executing Init Containers. |
+| `PodInitializing or Running` | The Pod has already finished executing Init Containers. |
 
 ----
 Reference : https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+Reference : https://kubernetes.io/docs/tasks/debug/_print/

@@ -15,6 +15,7 @@
 | `kubectl get services --sort-by=.metadata.name` | List Services Sorted by Name |
 | `kubectl get deployment` | List all deployments in the namespace |
 | `kubectl get node` | List all nodes |
+| `kubectl get namespaces` | List all namespaces |
 | `kubectl get events --sort-by=.metadata.creationTimestamp` | List Events sorted by timestamp |
 
 ### Describe commands with verbose output

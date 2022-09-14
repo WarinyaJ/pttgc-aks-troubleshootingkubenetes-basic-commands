@@ -25,6 +25,7 @@
 | `kubectl describe nodes <node name>` | Describe node details  |
 | `kubectl describe pods <pod name>` | Describe pod details  |
 | `kubectl describe deployment <deployment name>` | Describe deployment details  |
+| `kubectl describe service <service name>` | Describe service details  |
 
 ### Log commands with basic output
 | Command | Description |

@@ -35,12 +35,16 @@
 | `kubectl logs deploy/<deployment name>` | dump Pod logs for a Deployment (single-container case) |
 | `kubectl logs deploy/my-deployment -c my-container` | dump Pod logs for a Deployment (multi-container case) |
 
-### Interacting with pod (pod must running status)
+### Interacting with pod , Nodes , cluster
 | Command | Description |
 | --- | --- |
 | `kubectl exec <pod name> -- ls` | Running individual commands in a pod |
 | `kubectl exec -it <pod name> -- sh` | run a shell to connected to your pod |
 | `kubectl exec deploy/<deployment name> -- ls` | run command in first Pod and first container in Deployment (single- or multi-container cases) |
+| `kubectl top pod <pod name> --containers` | Show metrics for a given pod and its containers |
+| `kubectl top pod <pod name> --sort-by=cpu` | Show metrics for a given pod and sort it by 'cpu' or 'memory' |
+| `kubectl top node my-node` | Show metrics for a given node |
+| `kubectl cluster-info dump` | Dump current cluster state to stdout |
 
 ### Example other kubernetes command 
 | Command | Description |

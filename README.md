@@ -48,6 +48,8 @@
 | `kubectl apply -f ./my-manifest.yaml` | create resource(s) |
 | `kubectl apply -f ./my1.yaml -f ./my2.yaml` | create from multiple files |
 | `kubectl apply -f ./dir` | create resource(s) in all manifest files in dir |
+| `kubectl delete -f ./pod.json` | Delete a pod using the type and name specified in pod.json |
+| `kubectl delete pod,service baz foo` | Delete pods and services with same names "baz" and "foo" |
 | `kubectl rollout restart deployment/frontend` | Rolling restart of the "frontend" deployment |
 | `kubectl label pods my-pod new-label=awesome` | Add a Label |
 | `kubectl scale --replicas=3 rs/foo` | Scale a replicaset named 'foo' to 3 |

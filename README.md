@@ -42,6 +42,18 @@
 | `kubectl exec -it <pod name> -- sh` | run a shell to connected to your pod |
 | `kubectl exec deploy/<deployment name> -- ls` | run command in first Pod and first container in Deployment (single- or multi-container cases) |
 
+### Example other kubernetes command 
+| Command | Description |
+| --- | --- |
+| `kubectl apply -f ./my-manifest.yaml` | create resource(s) |
+| `kubectl apply -f ./my1.yaml -f ./my2.yaml` | create from multiple files |
+| `kubectl apply -f ./dir` | create resource(s) in all manifest files in dir |
+| `kubectl rollout restart deployment/frontend` | Rolling restart of the "frontend" deployment |
+| `kubectl label pods my-pod new-label=awesome` | Add a Label |
+| `kubectl scale --replicas=3 rs/foo` | Scale a replicaset named 'foo' to 3 |
+| `kubectl autoscale deployment foo --min=2 --max=10` | Auto scale a deployment "foo" |
+| `kubectl edit svc/docker-registry` | Edit the service named docker-registry |
+
 ### Understanding Pod status
 | Status | Meaning |
 | --- | --- |

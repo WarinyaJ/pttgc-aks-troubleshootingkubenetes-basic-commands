@@ -4,6 +4,7 @@
 | Command | Description |
 | --- | --- |
 | `kubectl get pods` | List all pods in the namespace |
+| `kubectl get pods -n <namespace name>` | List all pods in specific namespace |
 | `kubectl get pods --all-namespaces` | List all pods in all namespaces |
 | `kubectl get pods -o wide` | List all pods in the current namespace in wide format , with more details |
 | `kubectl get pods -o wide --all-namespaces` | List all pods in all namespaces in wide format , with more details |

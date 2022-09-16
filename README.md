@@ -69,6 +69,7 @@
 | `Init:CrashLoopBackOff` | An Init Container has failed repeatedly. |
 | `Pending` | The Pod has not yet begun executing Init Containers. |
 | `PodInitializing or Running` | The Pod has already finished executing Init Containers. |
+| `ErrImagePull` | Image not found on repository. |
 
 ----
 Reference : https://kubernetes.io/docs/reference/kubectl/cheatsheet/

@@ -1,4 +1,4 @@
-# Kubernetes basic commands for monitoring and troubleshooting
+# pttgc-aks-troubleshootingkubenetes-basic-commands
 ### Get commands with basic output
 
 | Command | Description |
